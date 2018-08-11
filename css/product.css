@@ -1,0 +1,26 @@
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.products div{
+    height: 300px;
+    width: 30%;
+    padding:6px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.products div img{
+    height: 300px;
+    width: 100%;
+    border: 2px solid red;
+    border-radius: 50%;
+    
+}
+
+#h1-products{
+    text-align: center;
+    color:brown;
+}
