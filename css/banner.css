@@ -21,10 +21,17 @@
 }
 
 @media screen and (max-width:480px){
+    .banner{
+        height: 50vh;
+        background-size:100% 50vh;
+    }
+    .banner div{
+        top:20vh;
+    }
     .banner h1{
-      font-size: 30px;
+      font-size: 25px;
     }
     .banner p{
-        font-size: 25px;
+        font-size: 18px;
       }
 }

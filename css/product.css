@@ -13,14 +13,27 @@
 }
 
 .products div img{
-    height: 300px;
+    height: 100%;
     width: 100%;
     border: 2px solid red;
     border-radius: 50%;
-    
 }
 
 #h1-products{
     text-align: center;
     color:brown;
+}
+
+@media screen and (max-width:480px){
+    .products div{
+        height: 150px;
+        width: 45%;
+    }
+    .products div h2{
+        font-size: 18px;
+    }
+    
+    #h1-products{
+        font-size: 18px;
+    }
 }
