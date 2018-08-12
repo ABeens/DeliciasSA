@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Queques, ponches, postres, pasteles, comida venezolana, tortas.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pagina para la venta de postres, queques y ponches.">
 
     <!--Jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -24,8 +25,8 @@
             <h1>Delicias S & A</h1>
             <div></div>
             <div class="norm-menu">
-                <a href="#">Inicio</a>
-                <a href="#">Productos</a>
+                <a href="#" onclick="scrollToPos('Home')">Inicio</a>
+                <a href="#" onclick="scrollToPos('h1-products')">Productos</a>
                 <a href="#">Clientes</a>
                 <a href="#">Contactenos</a>
             </div>
@@ -34,21 +35,21 @@
 
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">Inicio</a>
-            <a href="#">Productos</a>
+            <a onclick="scrollToPos('Home')">Inicio</a>
+            <a onclick="scrollToPos('h1-products')">Productos</a>
             <a href="#">Clientes</a>
             <a href="#">Contactenos</a>
         </div>
     </header>
-    <div class="container">
+    <div id="Home" class="container">
         <div class="banner">
             <div class="banner-text">
-                <h1>Pruebe nuestros geniales productos</h1>
-                <p>Las mejores recetas en pasteles ponches y postres</p>
+                <h2>Queques Ponches y Mucho mas</h2>
+                <p>Las mejores recetas hechas a la medida</p>
             </div>
         </div>
     </div>
-    <div class="container">
+    <div id"Products" class="container">
         <h4 id="h1-products">PRODUCTOS</h4>
         <div class="products">
             <div>
