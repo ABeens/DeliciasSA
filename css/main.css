@@ -1,6 +1,7 @@
 @import url(banner.css);
 @import url(product.css);
 @import url(menu.css);
+@import url(about.css);
 
 *{
     margin: 0;
@@ -16,4 +17,33 @@ header{
     position: fixed;
     top:0;
     z-index: 102;
+}
+
+footer{
+    margin-bottom: 5px;
+    font-size:25px;
+    width: 100%;
+}
+.foot{
+    color: brown;
+    text-align: center;
+    display:flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin:auto;
+    justify-content: center
+}
+
+.foot div{
+    padding: 3px;
+}
+
+@media screen and (max-width:480px){
+    footer{
+        font-size:12px;
+    }
+    .foot{
+        text-align: left;
+        justify-content: right;
+    }
 }

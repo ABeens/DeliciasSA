@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Queques, ponches, postres, pasteles, comida venezolana, tortas.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Pagina para la venta de postres, queques y ponches.">
+    <meta name="description" content="Pagina para la venta de postres, queques, pasteles, comida venezolana y ponches.">
 
     <!--Jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/fontello.css" />
     <script src="./scripts/main.js"></script>
     <style>
     </style>
@@ -27,18 +28,14 @@
             <div class="norm-menu">
                 <a href="#" onclick="scrollToPos('Home')">Inicio</a>
                 <a href="#" onclick="scrollToPos('h1-products')">Productos</a>
-                <a href="#">Clientes</a>
-                <a href="#">Contactenos</a>
             </div>
             <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         </div>
 
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a onclick="scrollToPos('Home')">Inicio</a>
-            <a onclick="scrollToPos('h1-products')">Productos</a>
-            <a href="#">Clientes</a>
-            <a href="#">Contactenos</a>
+            <a href="#" onclick="scrollToPos('Home')">Inicio</a>
+            <a href="#" onclick="scrollToPos('h1-products')">Productos</a>
         </div>
     </header>
     <div id="Home" class="container">
@@ -49,7 +46,7 @@
             </div>
         </div>
     </div>
-    <div id"Products" class="container">
+    <div id "Products" class="container">
         <h4 id="h1-products">PRODUCTOS</h4>
         <div class="products">
             <div>
@@ -78,6 +75,29 @@
             </div>
         </div>
     </div>
+    <div id="About" class="container">
+        
+    </div>
+
+    <footer>
+        <div class="foot">
+            <div>
+                <a class="icon-facebook-squared">
+                    Delicias S&A
+                </a>
+            </div>
+            <div>
+                <a class="icon-gmail">
+                    Siulymaccccr@gmail.com
+                </a>
+            </div>
+            <div>
+                <a class="icon-phone">
+                    +506 61281573
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
