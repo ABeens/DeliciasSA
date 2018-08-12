@@ -22,6 +22,7 @@
 #h1-products{
     text-align: center;
     color:brown;
+    font-size:30px;
 }
 
 @media screen and (max-width:480px){
