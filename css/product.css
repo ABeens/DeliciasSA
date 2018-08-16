@@ -1,7 +1,15 @@
+#Products{
+    position: relative;
+}
 .products{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    position: relative;
+}
+
+.products div{
+    position:relative;
 }
 
 .products div{

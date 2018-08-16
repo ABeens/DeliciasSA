@@ -31,7 +31,7 @@ function scrollToPos(idEl) {
     }
     else {
         $('html:not(:animated), body:not(:animated)').animate({
-            scrollTop: $("#" + idEl).offset().top
+            scrollTop: ($("#" + idEl).offset().top - 50)
         }, 1000);
     }
 }

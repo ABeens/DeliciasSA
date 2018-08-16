@@ -22,12 +22,11 @@
 <body>
     <header>
         <div id="menu">
-            <!--<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQ5SURBVGhD7ZdtTFtVHMYxviXGD2qi3/xioh/8SmJcQnuLRuxty8o4t7SUjpeWlpdOykAYc2MbG25KNjNfPrgYlzh1QSdmM0jUBINxL05n3DKTiWaaxUXZyJgwGF0Hffyf23M72Ho30I7eD/eXPIHL//C/z9N7zrmneSYmJiYmJiYm+uS7XPeJX2/A4/Hcabfb7xWXxsPiVJ6SHMqA1aHE6SdIf1ll1iO53Q/wus3B3JLMDtPfZlJ1NmyVlZb8/MjdagMjIDkVHxlLiADzZHWwX9RAGWpcFOaLJz2ee0Sr3GEp8j4qycoUN+Vllfg00oavq2LoKatF4XWm68tr0R9qwVeVTVjDqq+FcSibRbvcwU1wM64SP2ZGx4ArCWDT60BDJz6saEybjQajSE5NA/9MAKu71XqXJyjq7AJfO6JlbiAjA9xMV3kEGL8EzM4Cr+5SjV6qeykdpC+2HkhcBS5TmJaX1frxmtZ0vUD2PiFa5gY+x7mRjUoQaN0KbNypmuSarFuXNrrH3wh09AAv0hhRPxHMYRCrs/Rxi0OpK7ArD/NrX7DxHW7E7irDSLgjbZKrtyKaNhpw+xGvp6cyp97tCaXqMhtbst3LIivP0FwepBsn+c07uradSiaTZ0fOncfzKypUQ6zYh08CURyqasZOb5gWuycdhCtUEsDAyhcwVNmMTqVmTo1tF7e5fRQ4Sx/Tpo+mYm81Dh89Bo3Bbw6ikJ7I3DGaymmRv/H27ow1TbRFT5J2W13KMnHb7GJzKE7aWie0G66MxHDg8y8xPR0XEa7x86lhtK7bjGeXe9Wxy301aoDxCdoAiKFvjyDc1I5CZ+opucuDqKhdBZu41kQf2klS7Oki5SFh4/9BTe00d6/w5kW0tfb2fUYbEu1ItyCRSGByckpc3ch0PI7LfOcS/D1yHu++3wsWCM8PpJ4Q2Ac2uyKRnTtSrhZJgdP/IDU7xxuWVTfgzJ9nxW1vH/xDOvTdD1jb9UqGaaoeZ9qXPbfiEWFxYVjl0hhvwBsODh3E8G+ns6LTf5zBbDIprOszemEM7+3dB29Nw/WBEjTVP7bYWRHZvPVTsslsdH6D7GnHm/SyXCA89Pc//oQNW7en115aMusWdvWheXlx3j9lUTvoDDb3XbJQjUXWYi+9VPn7iPehg+gWYVcfGtTPB7ezKgyH2rKm32vbMJvB5GKUJP0aantLWL05WpAtdKjL1CzXSjas3yas3hwzyBLoan0n+gLRjyTJc7+wq4+Rg+zy1WmLfY+wq4+Rg/Bvl4WyMkNnsyZhVx9zjSyRFh1kA6vGeHCNoXSRNORftU+SpLuEXX20IM0uP46WhA2l7uKAWOzKa8KuPkYOwj2lgrB+YVcfM8gS6D8FKXN6sckVMJS4pwUHobP+AT7YyKLFvl/Y1YcG2uk78xFKfcyQIm/iW6KJiYmJiUmWyMv7FwWHilxN98xgAAAAAElFTkSuQmCC">-->
-            <h1>Delicias S & A</h1>
-            <div></div>
+            <h1 class="title">Delicias S & A</h1>
             <div class="norm-menu">
                 <a href="#" onclick="scrollToPos('Home')">Inicio</a>
                 <a href="#" onclick="scrollToPos('h1-products')">Productos</a>
+                <a href="#" onclick="scrollToPos('h1-about')">Acerca de Nosotros</a>
             </div>
             <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         </div>
@@ -36,6 +35,7 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#" onclick="scrollToPos('Home')">Inicio</a>
             <a href="#" onclick="scrollToPos('h1-products')">Productos</a>
+            <a href="#" onclick="scrollToPos('h1-about')">Acerca de Nosotros</a>
         </div>
     </header>
     <div id="Home" class="container">
@@ -47,7 +47,7 @@
         </div>
     </div>
     <div id "Products" class="container">
-        <h4 id="h1-products">PRODUCTOS</h4>
+        <h4 id="h1-products" class="subtitle">PRODUCTOS</h4>
         <div class="products">
             <div>
                 <img src="./imgs/product-1.jpg">
@@ -61,24 +61,37 @@
                 <img src="./imgs/product-3.jpg">
                 <h2>Ponches</h2>
             </div>
-            <div>
-                <img src="./imgs/product-1.jpg">
-                <h2>Pasteles</h2>
-            </div>
-            <div>
-                <img src="./imgs/product-2.jpg">
-                <h2>Licores</h2>
-            </div>
-            <div>
-                <img src="./imgs/product-3.jpg">
-                <h2>Salsas</h2>
+        </div>
+    </div>
+    <div id="Card" class="container">
+        <div class="card-content">
+            <div class="card-text">
+                <h3 id="h1-about"  class="subtitle">
+                    ACERCA DE NOSOTROS
+                </h3>
+                <div class="card-info">
+                    <img src="./imgs/card-img.jpg">
+                    <p>
+                        En 1917, con 15 años, Ray Kroc mintió sobre su edad para ingresar en la Cruz Roja como conductor de ambulancia, pero la guerra
+                        terminó antes de que él completara su entrenamiento. Luego trabajó como pianista, vendedor de vasos
+                        de papel y de batidoras posteriormente. En 1954, Ray visitó un restaurante en San Bernardino, California,
+                        que le había comprado varias de las batidoras que vendía. Allí encontró un pequeño pero exitoso restaurante
+                        operado por los hermanos Dick y Mac McDonald, y quedó sumamente sorprendido por la eficiencia con
+                        la que operaba. El restaurante contaba con un menú limitado que consistía de sólo unos pocos productos:
+                        hamburguesas, papitas y bebidas. Esto les permitía concentrarse en la calidad y el servicio rápido.
+                        Kroc compartió su visión de abrir restaurantes McDonald’s en todo el país con los hermanos. En 1955,
+                        fundó McDonald’s System, Inc., predecesor de McDonald’s Corporation, y seis años más tarde, compró
+                        los derechos exclusivos del nombre McDonald’s. Para el año 1958, McDonald’s había vendido 100 millones
+                        de hamburguesas.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-    <div id="About" class="container">
-        
-    </div>
+    <div id="Catalog" class="container">
+        <h4 id="h1-catalog"  class="subtitle">CATALOGO</h4>
 
+    </div>
     <footer>
         <div class="foot">
             <div>
